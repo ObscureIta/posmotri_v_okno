@@ -59,7 +59,7 @@ ol {
 .result__video-container {
   position: relative;
   width: 711px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .result__video {
@@ -110,7 +110,7 @@ ol {
   margin-bottom: 4px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.2em;
   text-align: left;
 }
@@ -130,7 +130,7 @@ ol {
 }
 
 .content__accent {
-  opacity: .3;
+  color: #545050;;
 }
 
 .content__list {
@@ -190,8 +190,8 @@ ol {
   color: #fff;
   cursor: pointer;
   background-color: transparent;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border: 1px solid #fff;
 }
 
@@ -204,10 +204,14 @@ ol {
   width: 100%;
 }
 
+/* Разобраться */
+
 .search-form__pseudo-checkbox {
   position: relative;
-  width: 19px;
-  height: 19px;
+  width: 18px;
+  height: 18px;
+  margin-left: 1px;
+  margin-top: 1px;
   margin-right: 6px;
   border: 1px solid #fff;
 }
@@ -216,9 +220,40 @@ ol {
   content: "";
   display: block;
   position: relative;
-  top: 1px;
-  width: 15px;
-  height: 15px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
   margin: auto;
   background-color: #fff;
+}
+
+/* ПОВЕДЕНИЕ */
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__label:hover, 
+.button:hover,
+.content__card-link:hover{
+  text-decoration: underline;
+}
+
+.search-form__textfield:active {
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.content__list-item:active,
+.content__list-item:first-child {
+  background-color: #545050;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline-offset: 2px;
+  outline: 1px solid #fff;
 }
