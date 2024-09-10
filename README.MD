@@ -1,1 +1,0 @@
-https://github.com/ObscureIta/posmotri_v_okno
